@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>📝 Blog Application</h1>
+
+    <div class="app-container">
+      <!-- Left: Blog Form -->
+      <div class="form-card">
+        <h2>Create a New Blog Post</h2>
+        <form id="blogForm">
+          <label for="title">Blog Title:</label>
+          <input type="text" id="title"  placeholder="Enter blog title" required />
+
+          <label for="author">Blog Author:</label>
+          <input type="text" id="author" placeholder="Enter author's name" required />
+
+          <label for="content">Blog Content:</label>
+          <textarea id="content" placeholder="Write your blog content here..." required></textarea>
+
+          <button type="submit">Submit</button>
+          <p id="successMessage"></p>
+        </form>
+      </div>
+
+      <!-- Right: Blog List -->
+      <div class="blog-list" id="blogList"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
