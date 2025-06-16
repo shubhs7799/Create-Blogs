@@ -20,4 +20,18 @@ A full-stack blog application where users can create blog posts and add/delete c
 ---
 
 ## 📁 Project Structure
-
+blog-app/
+├── public/
+│ ├── index.html # Frontend HTML
+│ ├── style.css # Stylesheet
+│ └── script.js # Frontend logic
+├── models/
+│ ├── blog.js # Blog model
+│ ├── comment.js # Comment model
+│ └── index.js # Sequelize DB config
+├── routes/
+│ └── blogRoutes.js # API routes
+├── server.js # Main backend entry point
+├── .env # DB credentials
+├── package.json
+└── README.md # Project info
